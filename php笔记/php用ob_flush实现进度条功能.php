@@ -6,6 +6,7 @@ function showmessage(message,width) {
 </script>
 
 <?php
+	
 	function showjsmessage($message,$width)
 	{
 		echo '<script type="text/javascript">showmessage(\''.addslashes($message) . '\',\'' . $width . '\');</script>';
