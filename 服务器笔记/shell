@@ -1,0 +1,5 @@
+ps -ef | grep "xxxx"
+#kill进程里包含 xxxx 的所有进程
+ps -ef|grep "xxxx"|grep -v grep|cut -c 9-15|xargs kill -9
+#查看进程里包含 xxxx 的进程数量
+ps -ef | grep "xxxx" | grep -v "grep" | wc -l
