@@ -10,3 +10,6 @@
 ~~~
 composer update
 ~~~
+稍等片刻，会出现如下文件及文件夹：
+![Vendor](https://raw.githubusercontent.com/lovezhao311/Luffy_note/master/笔记/Composer使用/i.png)
+
