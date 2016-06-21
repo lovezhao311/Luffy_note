@@ -1,0 +1,40 @@
+#iptalbe语法
+	iptable [-t table] command [chain] [match][-j target]
+	注释：iptable [-t 表名] -命令 [链接] [匹配] [-j 动作/目标]
+
+#iptable参数
+	[-t table]
+		
+
+
+#实例
+*filter
+#禁止所有访问
+:INPUT DROP [0:0]
+#开启所有的转发链接
+:FORWARD ACCEPT [0:0]
+#开启 处理本地生成的包
+:OUTPUT ACCEPT [4549:4586104]
+
+#开启访问的双向传送
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT 
+#开启80端口
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT 
+#8080端口只能本地访问
+-A INPUT -s 127.0.0.1/32 -p tcp -m tcp --dport 8080 -j ACCEPT 
+
+-A INPUT -i lo -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT 
+-A INPUT -p icmp -m icmp --icmp-type 0 -j ACCEPT 
+-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT 
+-A INPUT -p udp -m udp --sport 53 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 80 -m limit --limit 25/min --limit-burst 500 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 22 -m limit --limit 25/min --limit-burst 500 -j ACCEPT 
+-A INPUT -m limit --limit 5/min -j LOG --log-prefix "Dropped: " --log-level 7 
+-A INPUT -p tcp -m tcp --dport 21 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 20 -j ACCEPT 
+-A OUTPUT -p tcp -m tcp --dport 433 -j ACCEPT 
+-A OUTPUT -p tcp -m tcp --dport 433 -j ACCEPT 
+-A OUTPUT -p tcp -m tcp --dport 433 -j ACCEPT 
+COMMIT
+# Completed on Mon Jan 26 14:45:46 2015
