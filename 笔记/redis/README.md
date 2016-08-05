@@ -18,3 +18,6 @@
 
 ### Example-06.php
     本例总共用到函数 rename renamenx
+
+### Example-07.php
+    本例总共用到函数 type

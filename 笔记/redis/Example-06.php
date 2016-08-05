@@ -1,4 +1,7 @@
 <?php
+
+echo time();
+exit;
 #加载公共文件
 include_once 'common.php';
 
@@ -43,7 +46,7 @@ dump($redis->get('favorite_animal')); //string(9) "butterfly"
 
 /**
  *
- *     本例总共用到函数 rename
+ *     本例总共用到函数 rename renamenx
  *         select 说明:
  *             将key改名为newkey。当key和newkey相同或者key不存在时，返回一个错误。当newkey已经存在时，RENAME命令将覆盖旧值。
  *         用法:
