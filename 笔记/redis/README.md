@@ -14,3 +14,7 @@
 
 ### Example-05.php
     本例总共用到函数 select move flushall
+
+
+### Example-06.php
+    本例总共用到函数 rename renamenx
