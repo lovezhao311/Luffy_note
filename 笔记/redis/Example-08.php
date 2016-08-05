@@ -1,5 +1,6 @@
 <?php
-
+echo serialize(['order_id' => 58]);
+exit;
 #加载公共文件
 include_once 'common.php';
 
