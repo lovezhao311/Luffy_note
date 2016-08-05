@@ -21,6 +21,10 @@ $redis->persist('name'); # 返回值 1 或者 0
 $ttl = $redis->ttl('name');
 dump($ttl); # > -1
 
+$redis->set('name', 'luffyzhao');
+$redis->expireat('name', '1355292000');
+
+$redis->flushdb();
 /**
  *
  *     本例总共用到函数 expire ttl persist
@@ -36,5 +40,9 @@ dump($ttl); # > -1
  *             移除给定key的生存时间。
  *         用法:
  *             $redis->persist(String $key);
+ *          expireat 说明:
+ *              也是给定key设置生存时间。不同在于EXPIREAT命令接受的时间参数是UNIX时间戳(unix timestamp)。
+ *          用法:
+ *              $redis->expireat($key,'1355292000'); # 这个key将在2012.12.12过期
  *
  * */

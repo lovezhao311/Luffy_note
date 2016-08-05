@@ -10,7 +10,7 @@
     本例总共用到函数 msetnx keys
 
 ### Example-04.php
-    本例总共用到函数 expire ttl persist
+    本例总共用到函数 expire ttl persist expireat
 
 ### Example-05.php
     本例总共用到函数 select move flushall
