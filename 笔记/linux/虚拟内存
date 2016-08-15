@@ -1,0 +1,23 @@
+创建swap分区
+    dd  if=/dev/zero of=/yourpath/swap bs=1024 count=1024000  
+解释
+    if              //输入 
+    of              //输出 
+    bs              //块儿大小 
+    count           //总大小
+
+
+创建Linux交换文件
+    mkswap    /yourpath/swap 
+
+
+激活/yourpath/swap交换文件
+    swapon   /yourpath/swap  
+
+查看是否生效（是否有 Swap 行）
+    free -m  
+
+停止swap分区
+    swapoff   /yourpath/swap 
+
+删除swap分区文件

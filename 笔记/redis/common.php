@@ -30,7 +30,7 @@ function dump($var, $echo = true, $label = null)
 {
     $label = (null === $label) ? '' : rtrim($label) . ':';
     ob_start();
-    var_dump($var);
+    echo var_export($var);
     $output = ob_get_clean();
     $output = preg_replace('/\]\=\>\n(\s+)/m', '] => ', $output);
 
