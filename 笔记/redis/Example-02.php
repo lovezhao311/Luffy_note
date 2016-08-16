@@ -28,6 +28,11 @@ $redis->del($array_mget);
 $mget = $redis->mget($array_mget);
 dump($mget); # ['0'=>bool(false),'1'=>bool(false)]
 
+# msetnx
+#同时设置一个或多个key-value对，当且仅当key不存在。
+#即使只有一个key已存在，MSETNX也会拒绝所有传入key的设置操作
+dump($redis->msetnx($array_mset)); // false
+
 /**
  *
  *     本例总共用到函数 mset mget

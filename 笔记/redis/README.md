@@ -1,7 +1,7 @@
 # php-redis 学习笔记及函数用法
 
 ### Example-01.php
-    本例介绍的函数 set get del exists flushdb
+    本例介绍的函数 set get del exists flushdb setnx setex setrange
 
 ### Example-02.php
     本例介绍的函数 mset mget
@@ -24,3 +24,6 @@
 
 ### Example-08.php
     本例介绍的函数 object
+
+### EXample-09.php
+    本例介绍的函数 sort
