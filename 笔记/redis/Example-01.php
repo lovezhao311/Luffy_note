@@ -94,6 +94,18 @@ dump($redis->get('number')); // 5
 $redis->incrby('number', 5);
 dump($redis->get('number')); // 10
 
+# 将key中储存的数字值减一。
+# 如果key不存在，以0为key的初始值，然后执行DECR操作。
+# 如果值包含错误的类型，或字符串类型的值不能表示为数字，那么返回一个错误。
+# 本操作的值限制在64位(bit)有符号数字表示之内。
+#
+$redis->decr('number');
+dump($redis->get('number')); // 9
+
+# 将key所储存的值减去减量decrement。
+$redis->decrby('number', 4);
+dump($redis->get('number')); // 5
+
 $redis->flushdb();
 /**
  *
