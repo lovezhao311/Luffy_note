@@ -1,0 +1,489 @@
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+
+
+
+
+<title>slider</title>
+
+<link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+
+<style>
+
+    p{ width:100%; height:40px; font-size:20px; color:#333; line-height:40px; text-align:center; font-family:"微软雅黑"}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+    <!-- ---------------------------------slider1--------------------------------------------- -->
+
+    <p>slider1(maxSlides)</p>
+
+    <div class="slider1">
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider1').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+    <!-- ---------------------------------slider2--------------------------------------------- -->
+
+    <p>slider2(slideWidth auto)</p>
+
+    <div class="slider2">
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar10"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider2').bxSlider({
+
+            slideWidth: 300, 
+
+            auto: true,
+
+            autoControls: true,
+
+            minSlides: 2,
+
+            maxSlides: 2,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+    <!-- ---------------------------------slider3--------------------------------------------- -->
+
+    <p>slider3(moveSlides)</p>
+
+    <div class="slider3">
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar10"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider3').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+            moveSlides: 1,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+   
+
+    
+
+    <!-- ---------------------------------slider4--------------------------------------------- -->
+
+    <p>slider4(startSlide)</p>
+
+    <div class="slider4">
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar10"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider4').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+            moveSlides: 1,
+
+            startSlide: 1,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+   
+
+    
+
+    <!-- ---------------------------------slider5--------------------------------------------- -->
+
+    <p>slider5(Vertical)</p>
+
+    <div class="slider5">
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar10"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider5').bxSlider({
+
+            mode: 'vertical',
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+    
+
+    
+
+    <!-- ---------------------------------slider6--------------------------------------------- -->
+
+    <p>slider6(Image)</p>
+
+    <div class="slider6">
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar4"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider6').bxSlider({
+
+            mode: 'fade',
+
+            slideWidth: 600, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+   
+
+    
+
+    <!-- ---------------------------------slider7--------------------------------------------- -->
+
+    <p>slider7(infiniteLoop hideControlOnEnd)</p>
+
+    <div class="slider7">
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar4"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider7').bxSlider({ 
+
+            slideWidth: 600, 
+
+            infiniteLoop: false,
+
+            hideControlOnEnd: true,
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+   
+
+    
+
+    <!-- ---------------------------------slider8--------------------------------------------- -->
+
+    <p>slider8(adaptiveHeight)</p>
+
+    <div class="slider8">
+
+      <div class="slide"><img src="http://placehold.it/600x200&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x300&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/600x250&text=FooBar4"></div> 
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider8').bxSlider({ 
+
+            slideWidth: 600, 
+
+            adaptiveHeight: true,
+
+            startSlides: 0, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+   
+
+    
+
+    <!-- ---------------------------------slider9--------------------------------------------- -->
+
+    <p>slider9(ticker)</p>
+
+    <div class="slider9"> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar1"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar2"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar3"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar4"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div> 
+
+      <div class="slide"><img src="http://placehold.it/350x150&text=FooBar10"></div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+          $('.slider9').bxSlider({ 
+
+            slideWidth: 200,
+
+            minSlides: 3,
+
+            maxSlides: 3,
+
+            ticker: true,
+
+            speed: 12000,
+
+            startSlides: 0, 
+
+            slideMargin: 10
+
+          });
+
+        });
+
+    </script>
+
+    
+
+</body>
+
+
+
+</html>
+
